@@ -7,17 +7,20 @@ import ChecklistScreen from './ChecklistScreen';
 import DjinnListScreen from './DjinnlistScreen';
 import ChapterListScreen from './ChapterListScreen';
 import DjinnDetailsScreen from './DjinnDetailsScreen';
+import { DJINN_LIST } from "../shared/djinnlist";
 
 const GoldenSunNavigator = () => {
     const Tabs = createBottomTabNavigator();
 
     const initialParams = {
-        name: 'Golden Sun'
+        name: 'goldensun',
+        djinn: DJINN_LIST.goldensun,
     }
 
     return (
         <Tabs.Navigator
             initialRouteName="Checklist"
+            screenOptions={{ headerShown: false }}
         >
             <Tabs.Screen
                 name='Checklist'
@@ -42,12 +45,14 @@ const LostAgeNavigator = () => {
     const Tabs = createBottomTabNavigator();
 
     const initialParams = {
-        name: 'Golden Sun: The Lost Age'
+        name: 'lostage',
+        djinn: DJINN_LIST.lostage,
     }
 
     return (
         <Tabs.Navigator
             initialRouteName="Checklist"
+            screenOptions={{ headerShown: false }}
         >
             <Tabs.Screen
                 name='Checklist'
@@ -72,12 +77,14 @@ const DarkDawnNavigator = () => {
     const Tabs = createBottomTabNavigator();
 
     const initialParams = {
-        name: 'Golden Sun: Dark Dawn'
+        name: 'darkdawn',
+        djinn: DJINN_LIST.darkdawn,
     }
 
     return (
         <Tabs.Navigator
             initialRouteName="Checklist"
+            screenOptions={{ headerShown: false }}
         >
             <Tabs.Screen
                 name='Checklist'
@@ -128,7 +135,7 @@ const Main = () => {
                     name='djinndetails'
                     component={DjinnDetailsScreen}
                     options={({ route} ) => ({
-                        title: route.params.djinn.name
+                        title: route.params.djinniName
                     })}
                 />
                 <Stack.Screen

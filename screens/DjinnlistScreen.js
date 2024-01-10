@@ -1,8 +1,9 @@
 import { Text, View } from "react-native"
 import { Button } from "react-native-elements";
+import { DJINN_INDEX } from "../shared/djinnindex";
 
 const DjinnListScreen = ({ route, navigation }) => {
-    const { name } = route.params;
+    const { name, djinn } = route.params;
 
     return (
         <View>
@@ -10,7 +11,10 @@ const DjinnListScreen = ({ route, navigation }) => {
             <Text>{name}</Text>
             <Button
                 title='Flint'
-                onPress={() => navigation.navigate('djinndetails', { djinn: { name: 'Flint' } })}
+                onPress={() => navigation.navigate(
+                    'djinndetails',
+                    { djinniName: 'Flint' }
+                )}
             />
         </View>
     )

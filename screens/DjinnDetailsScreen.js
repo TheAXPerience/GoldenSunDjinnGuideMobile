@@ -1,12 +1,11 @@
-import { View, Text } from "react-native";
+import RenderDjinnDetail from "../components/RenderDjinnDetail";
+import { DJINN_INDEX } from "../shared/djinnindex";
 
 const DjinnDetailsScreen = ({ route }) => {
-    const {djinn} = route.params;
+    const { djinniName } = route.params;
 
     return (
-        <View>
-            <Text>Djinn Details</Text>
-        </View>
+        <RenderDjinnDetail djinni={DJINN_INDEX[djinniName.toLowerCase()]} />
     );
 }
 
