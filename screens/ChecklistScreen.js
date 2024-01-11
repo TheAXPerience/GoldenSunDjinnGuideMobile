@@ -1,7 +1,6 @@
-import { ScrollView, FlatList } from "react-native";
+import { FlatList } from "react-native";
 import { Avatar, CheckBox, ListItem } from "react-native-elements";
 import { retrieveSprite } from "../shared/djinnimages";
-import { DJINN_INDEX } from "../shared/djinnindex";
 
 const ChecklistScreen = ({ route, navigation }) => {
     const { name, djinn } = route.params;

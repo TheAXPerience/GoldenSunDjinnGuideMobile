@@ -1,6 +1,12 @@
 // temporary file for djinn showing up in the general list
 // each djinn needs an id, name, image, element/type, and chapter
 
+export const CHAPTERS_LIST = {
+    goldensun: [1, 2, 3, 4],
+    lostage: [1, 2, 3, 4, 5, 6],
+    darkdawn: [1, 2, 3, 4, 5]
+}
+
 export const DJINN_LIST = {
     goldensun: [
         {
