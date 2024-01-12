@@ -3,6 +3,14 @@ import { Avatar, CheckBox, ListItem } from "react-native-elements";
 import { retrieveSprite } from '../shared/djinnimages';
 import { useState } from "react";
 
+const djinnIcons = [
+    require('../assets/images/icons/venus_icon.png'),
+    require('../assets/images/icons/mars_icon.png'),
+    require('../assets/images/icons/jupiter_icon.png'),
+    require('../assets/images/icons/mercury_icon.png'),
+    require('../assets/images/icons/summon_icon.png')
+];
+
 const DjinnListScreen = ({ route, navigation }) => {
     const { name, djinn } = route.params;
     const [element, setElement] = useState('venus');
@@ -37,29 +45,29 @@ const DjinnListScreen = ({ route, navigation }) => {
                 }}
             >
                 <Avatar
-                    source={retrieveSprite('goldensun', 'venus')}
+                    source={djinnIcons[0]}
                     size={48}
                     onPress={() => setElement('venus')}
                 />
                 <Avatar
-                    source={retrieveSprite('goldensun', 'mars')}
+                    source={djinnIcons[1]}
                     size={48}
                     onPress={() => setElement('mars')}
                 />
                 <Avatar
-                    source={retrieveSprite('goldensun', 'jupiter')}
+                    source={djinnIcons[2]}
                     size={48}
                     onPress={() => setElement('jupiter')}
                 />
                 <Avatar
-                    source={retrieveSprite('goldensun', 'mercury')}
+                    source={djinnIcons[3]}
                     size={48}
                     onPress={() => setElement('mercury')}
                 />
                 {
                     name !== 'goldensun' && (
                         <Avatar
-                            source={retrieveSprite('lostage', 'zagan')}
+                            source={djinnIcons[4]}
                             size={48}
                             onPress={() => setElement('summon')}
                         />

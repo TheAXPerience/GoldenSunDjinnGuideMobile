@@ -8,6 +8,7 @@ import DjinnListScreen from './DjinnlistScreen';
 import ChapterListScreen from './ChapterListScreen';
 import DjinnDetailsScreen from './DjinnDetailsScreen';
 import { DJINN_LIST } from "../shared/djinnlist";
+import { Image } from "react-native-elements";
 
 const GoldenSunNavigator = () => {
     const Tabs = createBottomTabNavigator();
@@ -26,16 +27,40 @@ const GoldenSunNavigator = () => {
                 name='Checklist'
                 component={ChecklistScreen}
                 initialParams={initialParams}
+                options={{
+                    tabBarIcon: ({color, size}) => (
+                        <Image
+                            source={require('../assets/images/icons/checkmark.png')}
+                            style={{height: size, width: size, tintColor: color}}
+                        />
+                    )
+                }}
             />
             <Tabs.Screen
                 name='Djinn List'
                 component={DjinnListScreen}
                 initialParams={initialParams}
+                options={{
+                    tabBarIcon: ({color, size}) => (
+                        <Image
+                            source={require('../assets/images/icons/djinni_icon.png')}
+                            style={{height: size, width: size, tintColor: color}}
+                        />
+                    )
+                }}
             />
             <Tabs.Screen
                 name='Chapters'
                 component={ChapterListScreen}
                 initialParams={initialParams}
+                options={{
+                    tabBarIcon: ({color, size}) => (
+                        <Image
+                            source={require('../assets/images/icons/chapterbook.png')}
+                            style={{height: size, width: size, tintColor: color}}
+                        />
+                    )
+                }}
             />
         </Tabs.Navigator>
     );
@@ -58,16 +83,40 @@ const LostAgeNavigator = () => {
                 name='Checklist'
                 component={ChecklistScreen}
                 initialParams={initialParams}
+                options={{
+                    tabBarIcon: ({color, size}) => (
+                        <Image
+                            source={require('../assets/images/icons/checkmark.png')}
+                            style={{height: size, width: size, tintColor: color}}
+                        />
+                    )
+                }}
             />
             <Tabs.Screen
                 name='Djinn List'
                 component={DjinnListScreen}
                 initialParams={initialParams}
+                options={{
+                    tabBarIcon: ({color, size}) => (
+                        <Image
+                            source={require('../assets/images/icons/djinni_icon.png')}
+                            style={{height: size, width: size, tintColor: color}}
+                        />
+                    )
+                }}
             />
             <Tabs.Screen
                 name='Chapters'
                 component={ChapterListScreen}
                 initialParams={initialParams}
+                options={{
+                    tabBarIcon: ({color, size}) => (
+                        <Image
+                            source={require('../assets/images/icons/chapterbook.png')}
+                            style={{height: size, width: size, tintColor: color}}
+                        />
+                    )
+                }}
             />
         </Tabs.Navigator>
     );
@@ -90,16 +139,40 @@ const DarkDawnNavigator = () => {
                 name='Checklist'
                 component={ChecklistScreen}
                 initialParams={initialParams}
+                options={{
+                    tabBarIcon: ({color, size}) => (
+                        <Image
+                            source={require('../assets/images/icons/checkmark.png')}
+                            style={{height: size, width: size, tintColor: color}}
+                        />
+                    )
+                }}
             />
             <Tabs.Screen
                 name='Djinn List'
                 component={DjinnListScreen}
                 initialParams={initialParams}
+                options={{
+                    tabBarIcon: ({color, size}) => (
+                        <Image
+                            source={require('../assets/images/icons/djinni_icon.png')}
+                            style={{height: size, width: size, tintColor: color}}
+                        />
+                    )
+                }}
             />
             <Tabs.Screen
                 name='Chapters'
                 component={ChapterListScreen}
                 initialParams={initialParams}
+                options={{
+                    tabBarIcon: ({color, size}) => (
+                        <Image
+                            source={require('../assets/images/icons/chapterbook.png')}
+                            style={{height: size, width: size, tintColor: color}}
+                        />
+                    )
+                }}
             />
         </Tabs.Navigator>
     );

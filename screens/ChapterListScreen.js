@@ -4,6 +4,15 @@ import { retrieveSprite } from '../shared/djinnimages';
 import { CHAPTERS_LIST } from "../shared/djinnlist";
 import { useState } from "react";
 
+const chapterNumberIcons = [
+    require('../assets/images/icons/one.png'),
+    require('../assets/images/icons/two.png'),
+    require('../assets/images/icons/three.png'),
+    require('../assets/images/icons/four.png'),
+    require('../assets/images/icons/five.png'),
+    require('../assets/images/icons/six.png'),
+]
+
 const ChapterListScreen = ({ route, navigation }) => {
     const { name, djinn } = route.params;
     const [chapter, setChapter] = useState(1);
@@ -38,13 +47,13 @@ const ChapterListScreen = ({ route, navigation }) => {
                 }}
             >
                 {
-                    CHAPTERS_LIST[name].map(chapter => {
-                        console.log('hello')
+                    CHAPTERS_LIST[name].map((chapter) => {
                         return (
                             <Avatar
-                                source={retrieveSprite('goldensun', 'venus')}
+                                source={chapterNumberIcons[chapter-1]}
                                 size={48}
                                 onPress={() => setChapter(chapter)}
+                                rounded
                             />
                         );
                     })
