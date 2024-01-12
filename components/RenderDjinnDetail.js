@@ -5,6 +5,7 @@ import { retrieveLogo, retrieveSprite } from "../shared/djinnimages";
 
 const RenderDjinnInfo = ({ djinni, game }) => {
     const [checked, setChecked] = useState(false);
+    const [isExpanded, setIsExpanded] = useState(false);
 
     const pressCheck = () => {
         setChecked(!checked);
@@ -17,17 +18,25 @@ const RenderDjinnInfo = ({ djinni, game }) => {
                 marginBottom: 5
             }}
         >
-            <Image
-                style={{ resizeMode: 'contain', height: 80, width: 'auto' }}
-                source={retrieveLogo(game)}
-            />
-            <Card.Divider />
-            <ListItem>
-                <Avatar
-                    size={48}
-                    source={retrieveSprite(game, djinni.image)}
-                />
-                <ListItem.Content>
+            <ListItem.Accordion
+                content={
+                    <ListItem.Content style={{alignItems: 'center', flex: 2}}>
+                    <Image
+                        source={retrieveLogo(game)}
+                        resizeMode="contain"
+                        style={{ height: 80 }}
+                    />
+                    </ListItem.Content>
+                }
+                isExpanded={isExpanded}
+                onPress={() => setIsExpanded(!isExpanded)}
+            >
+                <Card.Divider />
+                <ListItem.Content style={{alignItems: 'center'}}>
+                    <Avatar
+                        size={48}
+                        source={retrieveSprite(game, djinni.image)}
+                    />
                     <ListItem.Subtitle style={{ fontSize: 14 }}>
                         {'"' + djinni.blurb + '"'}
                     </ListItem.Subtitle>
@@ -36,7 +45,7 @@ const RenderDjinnInfo = ({ djinni, game }) => {
                     </ListItem.Title>
                     <Text style={{ fontSize: 16}}>{djinni.description}</Text>
                 </ListItem.Content>
-            </ListItem>
+            </ListItem.Accordion>
             <CheckBox
                 center
                 checked={checked}

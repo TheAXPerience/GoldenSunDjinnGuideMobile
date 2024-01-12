@@ -54,6 +54,7 @@ const ChapterListScreen = ({ route, navigation }) => {
                                 size={48}
                                 onPress={() => setChapter(chapter)}
                                 rounded
+                                id={chapter}
                             />
                         );
                     })
