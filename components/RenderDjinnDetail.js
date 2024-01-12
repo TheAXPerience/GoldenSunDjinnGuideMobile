@@ -34,7 +34,7 @@ const RenderDjinnInfo = ({ djinni, game }) => {
                 <Card.Divider />
                 <ListItem.Content style={{alignItems: 'center'}}>
                     <Avatar
-                        size={48}
+                        size={56}
                         source={retrieveSprite(game, djinni.image)}
                     />
                     <ListItem.Subtitle style={{ fontSize: 14 }}>
