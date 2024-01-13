@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { FlatList, View } from "react-native";
 import { Avatar, CheckBox, ListItem } from "react-native-elements";
-import { retrieveSprite } from '../shared/djinnimages';
-import { useState } from "react";
+import { retrieveSprite } from "../shared/djinnimages";
+import { toggleChecked } from "../features/checked/checkedSlice";
+import { useSelector, useDispatch } from "react-redux";
 
 const djinnIcons = [
     require('../assets/images/icons/venus_icon.png'),
@@ -14,8 +16,10 @@ const djinnIcons = [
 const DjinnListScreen = ({ route, navigation }) => {
     const { name, djinn } = route.params;
     const [element, setElement] = useState('venus');
+    const checkedDjinn = useSelector((state) => state.checked);
+    const dispatch = useDispatch();
 
-    const renderDjinniListItem = ({ item: djinni }) => (
+    const DjinnListItem = ({ item: djinni }) => (
         <ListItem
             bottomDivider
             onPress={() => navigation.navigate(
@@ -30,7 +34,10 @@ const DjinnListScreen = ({ route, navigation }) => {
             <ListItem.Content>
                 <ListItem.Title>{djinni.name}</ListItem.Title>
             </ListItem.Content>
-            <CheckBox />
+            <CheckBox
+                checked={checkedDjinn.includes(djinni.id)}
+                onPress={() => dispatch(toggleChecked(djinni.id))}
+            />
         </ListItem>
     )
 
@@ -78,7 +85,7 @@ const DjinnListScreen = ({ route, navigation }) => {
             <FlatList
                 nestedScrollEnabled
                 data={djinn.filter((djinni) => djinni.element === element)}
-                renderItem={renderDjinniListItem}
+                renderItem={DjinnListItem}
                 keyExtractor={(item) => item.id.toString()}
             />
         </>

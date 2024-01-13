@@ -1,11 +1,15 @@
 import { FlatList } from "react-native";
 import { Avatar, CheckBox, ListItem } from "react-native-elements";
 import { retrieveSprite } from "../shared/djinnimages";
+import { toggleChecked } from "../features/checked/checkedSlice";
+import { useSelector, useDispatch } from "react-redux";
 
 const ChecklistScreen = ({ route, navigation }) => {
     const { name, djinn } = route.params;
+    const checkedDjinn = useSelector((state) => state.checked);
+    const dispatch = useDispatch();
 
-    const renderDjinniListItem = ({ item: djinni }) => (
+    const DjinnListItem = ({ item: djinni }) => (
         <ListItem
             bottomDivider
             onPress={() => navigation.navigate(
@@ -20,7 +24,10 @@ const ChecklistScreen = ({ route, navigation }) => {
             <ListItem.Content>
                 <ListItem.Title>{djinni.name}</ListItem.Title>
             </ListItem.Content>
-            <CheckBox />
+            <CheckBox
+                checked={checkedDjinn.includes(djinni.id)}
+                onPress={() => dispatch(toggleChecked(djinni.id))}
+            />
         </ListItem>
     )
 
@@ -28,7 +35,7 @@ const ChecklistScreen = ({ route, navigation }) => {
         <FlatList
             nestedScrollEnabled
             data={djinn}
-            renderItem={renderDjinniListItem}
+            renderItem={DjinnListItem}
             keyExtractor={(item) => item.id.toString()}
         />
     )

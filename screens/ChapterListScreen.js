@@ -1,6 +1,8 @@
 import { FlatList, View } from "react-native";
 import { Avatar, CheckBox, ListItem } from "react-native-elements";
-import { retrieveSprite } from '../shared/djinnimages';
+import { retrieveSprite } from "../shared/djinnimages";
+import { toggleChecked } from "../features/checked/checkedSlice";
+import { useSelector, useDispatch } from "react-redux";
 import { CHAPTERS_LIST } from "../shared/djinnlist";
 import { useState } from "react";
 
@@ -16,8 +18,10 @@ const chapterNumberIcons = [
 const ChapterListScreen = ({ route, navigation }) => {
     const { name, djinn } = route.params;
     const [chapter, setChapter] = useState(1);
+    const checkedDjinn = useSelector((state) => state.checked);
+    const dispatch = useDispatch();
 
-    const renderDjinniListItem = ({ item: djinni }) => (
+    const DjinnListItem = ({ item: djinni }) => (
         <ListItem
             bottomDivider
             onPress={() => navigation.navigate(
@@ -32,7 +36,10 @@ const ChapterListScreen = ({ route, navigation }) => {
             <ListItem.Content>
                 <ListItem.Title>{djinni.name}</ListItem.Title>
             </ListItem.Content>
-            <CheckBox />
+            <CheckBox
+                checked={checkedDjinn.includes(djinni.id)}
+                onPress={() => dispatch(toggleChecked(djinni.id))}
+            />
         </ListItem>
     )
 
@@ -54,7 +61,7 @@ const ChapterListScreen = ({ route, navigation }) => {
                                 size={48}
                                 onPress={() => setChapter(chapter)}
                                 rounded
-                                id={chapter}
+                                key={chapter}
                             />
                         );
                     })
@@ -64,7 +71,7 @@ const ChapterListScreen = ({ route, navigation }) => {
             <FlatList
                 nestedScrollEnabled
                 data={djinn.filter((djinni) => djinni.chapter === chapter)}
-                renderItem={renderDjinniListItem}
+                renderItem={DjinnListItem}
                 keyExtractor={(item) => item.id.toString()}
             />
         </>

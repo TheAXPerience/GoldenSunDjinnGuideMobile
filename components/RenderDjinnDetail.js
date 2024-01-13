@@ -1,15 +1,14 @@
 import { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { ScrollView, Text, Image } from "react-native";
 import { Avatar, Card, CheckBox, ListItem } from "react-native-elements";
 import { retrieveLogo, retrieveSprite } from "../shared/djinnimages";
+import { toggleChecked } from "../features/checked/checkedSlice";
 
 const RenderDjinnInfo = ({ djinni, game }) => {
-    const [checked, setChecked] = useState(false);
     const [isExpanded, setIsExpanded] = useState(false);
-
-    const pressCheck = () => {
-        setChecked(!checked);
-    }
+    const checkedDjinn = useSelector((state) => state.checked);
+    const dispatch = useDispatch();
 
     return (
         <Card
@@ -20,12 +19,14 @@ const RenderDjinnInfo = ({ djinni, game }) => {
         >
             <ListItem.Accordion
                 content={
-                    <ListItem.Content style={{alignItems: 'center', flex: 2}}>
-                    <Image
-                        source={retrieveLogo(game)}
-                        resizeMode="contain"
-                        style={{ height: 80 }}
-                    />
+                    <ListItem.Content
+                        style={{ alignItems: 'center', flex: 2 }}
+                    >
+                        <Image
+                            source={retrieveLogo(game)}
+                            resizeMode="contain"
+                            style={{ height: 80 }}
+                        />
                     </ListItem.Content>
                 }
                 isExpanded={isExpanded}
@@ -36,25 +37,31 @@ const RenderDjinnInfo = ({ djinni, game }) => {
                     <Avatar
                         size={56}
                         source={retrieveSprite(game, djinni.image)}
+                        containerStyle={{ marginVertical: 4 }}
                     />
                     <ListItem.Subtitle style={{ fontSize: 14 }}>
                         {'"' + djinni.blurb + '"'}
                     </ListItem.Subtitle>
-                    <ListItem.Title style={{ fontSize: 18, fontWeight: 'bold' }}>
+                    <ListItem.Title style={{
+                        fontSize: 18,
+                        fontWeight: 'bold',
+                        marginVertical: 5
+                    }}>
                         Location: {djinni.location}
                     </ListItem.Title>
-                    <Text style={{ fontSize: 16}}>{djinni.description}</Text>
+                    <Text style={{ fontSize: 16, marginVertical: 5 }}>
+                        {djinni.description}
+                    </Text>
                 </ListItem.Content>
             </ListItem.Accordion>
             <CheckBox
                 center
-                checked={checked}
-                onPress={() => pressCheck()}
+                checked={checkedDjinn.includes(djinni.id)}
+                onPress={() => dispatch(toggleChecked(djinni.id))}
                 title='Click to mark as obtained'
                 iconRight
             />
         </Card>
-
     );
 }
 

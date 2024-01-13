@@ -8,7 +8,7 @@ import LoadingView from './components/LoadingView';
 export default function App() {
   return (
     <Provider store={store}>
-      <PersistGate persistor={persistor} loading={LoadingView}>
+      <PersistGate persistor={persistor} loading={<LoadingView />}>
         <NavigationContainer>
           <Main />
         </NavigationContainer>
