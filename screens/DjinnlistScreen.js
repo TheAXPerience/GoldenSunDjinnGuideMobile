@@ -16,7 +16,7 @@ const djinnIcons = [
 const DjinnListScreen = ({ route, navigation }) => {
     const { name, djinn } = route.params;
     const [element, setElement] = useState('venus');
-    const [title, setTitle] = useState('List of Venus Djinni');
+    // const [title, setTitle] = useState('List of Venus Djinni');
 
     const checkedDjinn = useSelector((state) => state.checked);
     const dispatch = useDispatch();
@@ -76,7 +76,7 @@ const DjinnListScreen = ({ route, navigation }) => {
                     justifyContent: 'center',
                     flexDirection: 'row',
                     justifyContent: 'space-between',
-                    margin: 15,
+                    padding: 10,
                     columnGap: 5
                 }}
             >
@@ -85,7 +85,7 @@ const DjinnListScreen = ({ route, navigation }) => {
                     size={48}
                     onPress={() => {
                         setElement('venus')
-                        setTitle('List of Venus Djinni')
+                        // setTitle('List of Venus Djinni')
                     }}
                 />
                 <Avatar
@@ -93,7 +93,7 @@ const DjinnListScreen = ({ route, navigation }) => {
                     size={48}
                     onPress={() => {
                         setElement('mars')
-                        setTitle('List of Mars Djinni')
+                        // setTitle('List of Mars Djinni')
                     }}
                 />
                 <Avatar
@@ -101,7 +101,7 @@ const DjinnListScreen = ({ route, navigation }) => {
                     size={48}
                     onPress={() => {
                         setElement('jupiter')
-                        setTitle('List of Jupiter Djinni')
+                        // setTitle('List of Jupiter Djinni')
                     }}
                 />
                 <Avatar
@@ -109,7 +109,7 @@ const DjinnListScreen = ({ route, navigation }) => {
                     size={48}
                     onPress={() => {
                         setElement('mercury')
-                        setTitle('List of Mercury Djinni')
+                        // setTitle('List of Mercury Djinni')
                     }}
                 />
                 {
@@ -119,21 +119,13 @@ const DjinnListScreen = ({ route, navigation }) => {
                             size={48}
                             onPress={() => {
                                 setElement('summon')
-                                setTitle('List of Summons')
+                                // setTitle('List of Summons')
                             }}
                         />
                     )
                 }
             </View>
             
-            <Text style={{
-                backgroundColor: '#ffffff00',
-                fontSize: 36,
-                margin: 4,
-                textAlign: 'center'
-            }}>
-                {title}
-            </Text>
             <FlatList
                 nestedScrollEnabled
                 data={djinn.filter((djinni) => djinni.element === element)}

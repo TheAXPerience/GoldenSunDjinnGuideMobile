@@ -44,13 +44,37 @@ const ChapterListScreen = ({ route, navigation }) => {
     const checkedDjinn = useSelector((state) => state.checked);
     const dispatch = useDispatch();
 
+    const colorByElement = (element) => {
+        let color = '#00000030';
+        switch(element) {
+            case 'mercury':
+                color = '#00f8f830';
+                break;
+            case 'mars':
+                color = '#f8000030';
+                break;
+            case 'venus':
+                color = '#f8f80030';
+                break;
+            case 'jupiter':
+                color = '#e070b030';
+                break;
+        }
+        return color;
+    }
+
     const DjinnListItem = ({ item: djinni }) => (
         <ListItem
+            topDivider
             bottomDivider
             onPress={() => navigation.navigate(
                 'djinndetails',
                 { djinniName: djinni.name }
             )}
+            containerStyle={{
+                backgroundColor: colorByElement(djinni.element),
+                borderColor: 'black'
+            }}
         >
             <Avatar
                 size={48}
@@ -62,6 +86,8 @@ const ChapterListScreen = ({ route, navigation }) => {
             <CheckBox
                 checked={checkedDjinn.includes(djinni.id)}
                 onPress={() => dispatch(toggleChecked(djinni.id))}
+                uncheckedColor='green'
+                checkedColor='green'
             />
         </ListItem>
     )
@@ -72,7 +98,8 @@ const ChapterListScreen = ({ route, navigation }) => {
                 style={{
                     justifyContent: 'center',
                     flexDirection: 'row',
-                    margin: 15,
+                    justifyContent: 'space-between',
+                    padding: 10,
                     columnGap: 5
                 }}
             >

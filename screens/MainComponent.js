@@ -186,6 +186,9 @@ const Main = () => {
         headerTintColor: '#f4d41d', // text color
         headerStyle: {
             backgroundColor: '#6C4023', // background color
+        },
+        cardStyle: {
+            backgroundColor: '#f8f8f8',
         }
     };
 
@@ -193,7 +196,12 @@ const Main = () => {
 
     // set up stack navigator
     return (
-        <View style={{ flex: 1, paddingTop: (Platform.OS === 'ios' ? 0 : Constants.statusBarHeight) }}>
+        <View
+            style={{
+                flex: 1,
+                paddingTop: (Platform.OS === 'ios' ? 0 : Constants.statusBarHeight),
+            }}
+        >
             <Stack.Navigator
                 initialRouteName="home"
                 screenOptions={screenOptions}

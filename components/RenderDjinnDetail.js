@@ -60,14 +60,35 @@ const RenderDjinnInfo = ({ djinni, game }) => {
                 onPress={() => dispatch(toggleChecked(djinni.id))}
                 title='Click to mark as obtained'
                 iconRight
+                uncheckedColor='green'
+                checkedColor='green'
             />
         </Card>
     );
 }
 
+const colorByElement = (element) => {
+    let color = '#00000030';
+        switch(element) {
+            case 'mercury':
+                color = '#00f8f830';
+                break;
+            case 'mars':
+                color = '#f8000030';
+                break;
+            case 'venus':
+                color = '#f8f80030';
+                break;
+            case 'jupiter':
+                color = '#e070b030';
+                break;
+        }
+        return color;
+}
+
 const RenderDjinnDetail = ({ djinni }) => {
     return (
-        <ScrollView>
+        <ScrollView style={{ backgroundColor: colorByElement(djinni.element) }}>
             {djinni.goldensun && <RenderDjinnInfo djinni={djinni.goldensun} game='goldensun' />}
             {djinni.lostage && <RenderDjinnInfo djinni={djinni.lostage} game='lostage' />}
             {djinni.darkdawn && <RenderDjinnInfo djinni={djinni.darkdawn} game='darkdawn' />}
