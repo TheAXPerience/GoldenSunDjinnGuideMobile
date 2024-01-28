@@ -1,0 +1,200 @@
+ID,NAME,GAME,TYPE,CHAPTER,LOCATION,DESCRIPTION,IMAGE,BLURB
+1,Flint,goldensun,venus,1,World Map (outside Vale),Flint will join upon leaving Vale.,venus,Strike a blow that can cleave stone.
+2,Forge,goldensun,mars,1,Goma Cave,Forge can be found sitting on top of a cliff.,mars,Boost party Attack with flame's fury.
+3,Gust,goldensun,jupiter,1,Bilibin,Gust can be found by solving a statue puzzle underneath the town.,jupiter,Attack with mighty wind gusts.
+4,Granite,goldensun,venus,1,Kolima,Granite can be found by entering a secret passage from behind one of the houses.,venus,Create a mighty earthen barrier.
+5,Breeze,goldensun,jupiter,1,Tret Tree,Zephyr can be found sitting on one of Tret's branches.,jupiter,Boost party Resistance.
+6,Fever,goldensun,mars,1,Imil,Fever can be found in a cave after solving an ice puzzle.,mars,Wrap a foe in feverish delusion.
+7,Fizz,goldensun,mercury,1,Mercury Lighthouse,Fizz will join alongside Mia.,mercury,Restore HP with calming water.
+8,Sleet,goldensun,mercury,1,Mercury Lighthouse,Sleet can be found behind one of the waterfalls.,mercury,Drench a foe to drop its attack.
+9,Zephyr,goldensun,jupiter,2,Fushin Falls Cave,Zephyr can be found after solving a log puzzle.,jupiter,Boost party Agility with swift wind.
+10,Quartz,goldensun,venus,2,Mogall Forest,Quartz can be found after solving a log puzzle.,venus,Revive a downed ally.
+11,Mist,goldensun,mercury,2,Xian,Mist can be found after making an NPC drop their water and using Frost to create a passage.,mercury,Lull a foe into deep sleep.
+12,Corona,goldensun,mars,2,World Map (north of Xian),Corona can be found to the north of Xian.,mars,Boost party Defense with a heat aura.
+13,Spritz,goldensun,mercury,2,Altin Peak,Spritz can be found after solving a minecart puzzle.,mercury,Restore party HP with soothing mist.
+14,Smog,goldensun,jupiter,2,Lamakan Desert,Smog can be found hidden by Reveal.,jupiter,Veil a foe's vision in smoke.
+15,Vine,goldensun,venus,3,World Map (west of Lamakan Desert),Vine can be found to the west of Lamakan Desert.,venus,Tangle foes to drop Agility.
+16,Scorch,goldensun,mars,3,Kalay Tunnel,Scorch can be found by entering the Kalay Tunnel and solving the water puzzle.,mars,Stun a foe with a blast attack.
+17,Sap,goldensun,venus,3,Vault,Sap can be found by ringing the bell on top of the tower and then using Reveal to enter a secret tunnel.,venus,Attack a foe and steal HP.
+18,Kite,goldensun,jupiter,3,Vale Cave,"Kite can be found after using Lift to enter Vale Cave in Vale, using the newly-obtained Halt psynergy to catch the djinni.",jupiter,Attack twice next round.
+19,Ember,goldensun,mars,3,Tolbi,"Ember can be found in a corner in Tolbi, after using psynergy to create a passage to it.",mars,Restore party PP with passion's flames.
+20,Hail,goldensun,mercury,3,World Map (west of Altmiller Cave),Hail can be found to the north of Tolbi and to the west of Altmiller Cave.,mercury,Freeze a foe to drop its Defense.
+21,Ground,goldensun,venus,3,Kalay Docks,Ground can be found by walking around the Karagol Sea from Tolbi and entering the back end of Kalay Docks.,venus,Use gravity to hold a foe.
+22,Squall,goldensun,jupiter,3,Altmiller Cave,Squall can be found after solving a fallen pillar puzzle.,jupiter,Paralyze a foe with a storm.
+23,Tonic,goldensun,mercury,3,Lunpa Fortress,Tonic can be found after obtaining the Cloak psynergy and talking to Donpa after clearing the Lunpa Fortress.,mercury,Heal all party ailments.
+24,Flash,goldensun,mars,4,Suhalla Desert,Flash can be found by using Reveal to uncover a secret passage.,mars,Block damage to party with a firewall.
+25,Dew,goldensun,mercury,4,Suhalla Gate,Dew can be found by dropping off the correct part of the cliff.,mercury,Revive a downed ally.
+26,Torch,goldensun,mars,4,Lalivero,Torch can be found by jumping across the rooftops.,mars,Penetrate defense with a melting blast.
+27,Luff,goldensun,jupiter,4,Babi Lighthouse,Luff can be found after falling down a particular ledge.,jupiter,Seal a foe's Psynergy.
+28,Bane,goldensun,venus,4,Crossbone Isle,Bane can be found by solving the puzzle on the sixth floor of Crossbone Isle.,venus,Attack with nature's venom.
+101,Echo,lostage,venus,1,World Map (outside of Daila),Echo will join upon exiting Daila to the south.,venus,Attack with a double strike.
+102,Fog,lostage,mercury,1,Kandorean Temple,Fog can be found after obtaining Lash by going back into the dungeon.,mercury,Blind an enemy with fog.
+103,Breath,lostage,jupiter,1,Shrine of the Sea God,"Breath can be found after obtaining Lash, by chasing it deeper into the shrine.",jupiter,Restore HP quickly.
+104,Cannon,lostage,mars,1,Dehkan Plateau,Cannon can be found after chasing it throughout the dungeon and solving a Pound puzzle.,mars,Strike with the power of Mars.
+105,Zagan,lostage,summon,1,Indra Cavern,Zagan can be found in a cave west of the Dehkan Plateau.,zagan,Earth's might enflamed.
+106,Iron,lostage,venus,1,World Map (west of Madra),Iron can be found in the forest to the immediate west of Madra.,venus,Bolster the party's Defense.
+107,Blitz,lostage,jupiter,2,Yampi Desert,Blitz can be found by solving a Pound puzzle.,jupiter,Numb a foe with a lightning strike.
+108,Flora,lostage,summon,2,Air's Rock,Flora can be found by solving a Whirlwind puzzle inside of Air's Rock.,flora,"The wind rider, goddess of flowers."
+109,Ether,lostage,jupiter,2,Garoh,Ether can be found by talking to Master Maha during the day after obtaining Reveal.,jupiter,Focus will to restore PP.
+110,Spark,lostage,mars,2,Mikasalla,Spark can be found by using Scoop to uncover an underground tunnel.,mars,Revive an ally with cheers of support.
+111,Sour,lostage,mercury,2,World Map (northeast of Mikasalla),Sour can be found in a patch of land to the northeast of Mikasalla.,mercury,Reduce a foe's resistance.
+112,Megaera,lostage,summon,2,Osenia Cavern,Megaera can be found in a cave northeast of Mikasalla by solving the Scoop puzzle.,megaera,The goddess of vengeance.
+113,Kindle,lostage,mars,3,Gondowan Cliffs,Kindle can be found towards the Gondowan side of the Gondowan Cliffs.,mars,Increase all allies' Attack.
+114,Chill,lostage,mercury,3,World Map (west of Gondowan Cliffs),Chill can be found by heading west from the Gondowan Cliffs.,mercury,Strike to reduce a foe's defense.
+115,Spring,lostage,mercury,3,Kibombo,Spring will join alongside Piers.,mercury,Restore HP with healing herbs.
+116,Shade,lostage,mercury,3,Kibombo,Shade will join alongside Piers.,mercury,Create a watery shield.
+117,Steel,lostage,venus,3,Gabomba Statue,Steel can be found by falling down the correct gear.,venus,Siphon a foe's HP with a kiss.
+118,Waft,lostage,jupiter,3,Kibombo Mountains,Waft can be found after Piers joins the party and solving a Frost puzzle.,jupiter,Calm a foe with soothing scents.
+119,Char,lostage,mars,3,Madra,Char can be found by giving an old couple a Healing Fungus.,mars,Paralyze foes with a strong blow.
+120,Moloch,lostage,summon,3,Madra Catacombs,Moloch can be found by reaching the depths of Madra Catacombs using Reveal and Frost.,moloch,The sacred ice monster.
+121,Mud,lostage,venus,3,Gabomba Catacombs,Mud can be found by solving a Cyclone puzzle.,venus,Slow a foe with sticky mud.
+122,Flower,lostage,venus,4,Taopo Swamp,Flower can be found by maneuvering through the air spout puzzle in the main cavern.,venus,Refresh allies and restore HP.
+123,Steam,lostage,mercury,4,Aqua Rock,Steam can be found after obtaining the Parch psynergy inside of Aqua Rock.,mercury,Increase all allies' Elemental strength.
+124,Coal,lostage,mars,4,Izumo,Coal can be found after completing Gaia Rock by handing the Dancing Idol to Uzume.,mars,Rally your allies to boost Agility.
+125,Ulysses,lostage,summon,4,Izumo,Ulysses can be found by using Reveal to enter an underground tunnel and using the Sand psynergy.,ulysses,A legendary wandering mage.
+126,Haze,lostage,jupiter,4,Apojii Islands,Haze can be found by using Sand to descend to the lower cliffs of the falls.,jupiter,Hide away to avoid damage.
+127,Wheeze,lostage,jupiter,4,World Map (south of Tundaria Tower),Wheeze can be found in a small area of land to the south of Tundaria Tower.,jupiter,Poison a foe as you strike.
+128,Reflux,lostage,mars,4,Tundaria Tower,Reflux can be found in the basement after solving an ice puzzle.,mars,Counter an enemy's attack.
+129,Meld,lostage,venus,4,Islet Cave,Meld can be found after gaining access to the Islet Cave from the Sea of Time Islet and completing a log puzzle. Reaching Islet Cave requires completing a fetch quest involving the miscellaneous islands in the Great Eastern Sea.,venus,Launch a powerful team strike.
+130,Eclipse,lostage,summon,4,Lemuria,Eclipse can be found by scoring the center of the Lemuria Spring Lucky Medal minigame.,eclipse,A dragon whose wings span the skies.
+131,Rime,lostage,mercury,4,Lemuria,Rime can be found by using Grind to reach a new part of Lemuria after exiting the first time.,mercury,Seal a foe's Psynergy.
+132,Core,lostage,mars,5,World Map (west of Contigo),"Core can be found to the west of Contigo, reachable from the western shores of Hesperia.",mars,Strike through an enemy's Defense.
+133,Petra,lostage,venus,5,World Map (northeast of Shaman Village),"Petra can be found in a forest to the northeast of Shaman Village, reachable from the northern shores of Atteka.",venus,Turn a foe to stone.
+134,Tinder,lostage,mars,5,Hesperia Settlement,Tinder can be found after completing a box puzzle.,mars,Revive a downed ally.
+135,Gel,lostage,mercury,5,Kalt Island,Gel can be found after completing an ice puzzle.,mercury,Weaken a foe's Attack.
+136,Aroma,lostage,jupiter,5,Shaman Village,Aroma can be found after completing Trial Road and climbing through one of the houses.,jupiter,Restore everyone's PP.
+137,Salt,lostage,venus,5,Contigo,Salt can be found by using Scoop in the center of a bunch of leaves.,venus,Restore allies' status to normal.
+138,Whorl,lostage,jupiter,5,Jupiter Lighthouse,Whorl can be found by solving a Hover puzzle.,jupiter,"Take a deep breath, and strike!"
+139,Flint,lostage,venus,6,Contigo (or Treasure Isle),"Flint may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Treasure Isle after Isaac's party joins.",venus,Strike a blow that can cleave stone.
+140,Granite,lostage,venus,6,Contigo (or Treasure Isle),"Granite may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Treasure Isle after Isaac's party joins.",venus,Create a mighty earthen barrier.
+141,Quartz,lostage,venus,6,Contigo (or Treasure Isle),"Quartz may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Treasure Isle after Isaac's party joins.",venus,Revive a downed ally.
+142,Vine,lostage,venus,6,Contigo (or Treasure Isle),"Vine may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Treasure Isle after Isaac's party joins.",venus,Tangle foes to drop Agility.
+143,Sap,lostage,venus,6,Contigo (or Treasure Isle),"Sap may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Treasure Isle after Isaac's party joins.",venus,Attack a foe and steal HP.
+144,Ground,lostage,venus,6,Contigo (or Treasure Isle),"Ground may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Treasure Isle after Isaac's party joins.",venus,Use gravity to hold a foe.
+145,Bane,lostage,venus,6,Contigo (or Treasure Isle),"Bane may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Treasure Isle after Isaac's party joins.",venus,Attack with nature's venom
+146,Forge,lostage,mars,6,Contigo (or Magma Rock),"Forge may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Magma Rock after Isaac's party joins.",mars,Boost party Attack with flame's fury.
+147,Fever,lostage,mars,6,Contigo (or Magma Rock),"Fever may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Magma Rock after Isaac's party joins.",mars,Wrap a foe in feverish delusion.
+148,Corona,lostage,mars,6,Contigo (or Magma Rock),"Corona may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Magma Rock after Isaac's party joins.",mars,Boost party Defense with a heat aura.
+149,Scorch,lostage,mars,6,Contigo (or Magma Rock),"Scorch may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Magma Rock after Isaac's party joins.",mars,Stun a foe with a blast attack.
+150,Ember,lostage,mars,6,Contigo (or Magma Rock),"Ember may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Magma Rock after Isaac's party joins.",mars,Restore party PP with passion's flames.
+151,Flash,lostage,mars,6,Contigo (or Magma Rock),"Flash may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Magma Rock after Isaac's party joins.",mars,Block damage to party with a firewall.
+152,Torch,lostage,mars,6,Contigo (or Magma Rock),"Torch may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Magma Rock after Isaac's party joins.",mars,Penetrate defense with a melting blast.
+153,Gust,lostage,jupiter,6,Contigo (or SW Atteka Islet),"Gust may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in SW Atteka Islet after Isaac's party joins.",jupiter,Attack with mighty wind gusts.
+154,Breeze,lostage,jupiter,6,Contigo (or SW Atteka Islet),"Breeze may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in SW Atteka Islet after Isaac's party joins.",jupiter,Boost party Resistance.
+155,Zephyr,lostage,jupiter,6,Contigo (or SW Atteka Islet),"Zephyr may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in SW Atteka Islet after Isaac's party joins.",jupiter,Boost party Agility with swift wind.
+156,Smog,lostage,jupiter,6,Contigo (or SW Atteka Islet),"Smog may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in SW Atteka Islet after Isaac's party joins.",jupiter,Veil a foe's vision in smoke.
+157,Kite,lostage,jupiter,6,Contigo (or SW Atteka Islet),"Kite may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in SW Atteka Islet after Isaac's party joins.",jupiter,Attack twice next round.
+158,Squall,lostage,jupiter,6,Contigo (or SW Atteka Islet),"Squall may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in SW Atteka Islet after Isaac's party joins.",jupiter,Paralyze a foe with a storm.
+159,Luff,lostage,jupiter,6,Contigo (or SW Atteka Islet),"Luff may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in SW Atteka Islet after Isaac's party joins.",jupiter,Seal a foe's Psynergy.
+160,Fizz,lostage,mercury,6,Contigo (or Prox),"Fizz may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Prox after Isaac's party joins.",mercury,Restore HP with calming water.
+161,Sleet,lostage,mercury,6,Contigo (or Prox),"Sleet may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Prox after Isaac's party joins.",mercury,Drench a foe to drop its Attack.
+162,Mist,lostage,mercury,6,Contigo (or Prox),"Mist may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Prox after Isaac's party joins.",mercury,Lull a foe into deep sleep.
+163,Spritz,lostage,mercury,6,Contigo (or Prox),"Spritz may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Prox after Isaac's party joins.",mercury,Restore party HP with soothing mist.
+164,Hail,lostage,mercury,6,Contigo (or Prox),"Hail may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Prox after Isaac's party joins.",mercury,Freeze a foe to drop its Defense.
+165,Tonic,lostage,mercury,6,Contigo (or Prox),"Tonic may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Prox after Isaac's party joins.",mercury,Heal all party ailments.
+166,Dew,lostage,mercury,6,Contigo (or Prox),"Dew may join with Isaac's party. If data is not transferred or this djinni was not found in Golden Sun, they may instead appear in Prox after Isaac's party joins.",mercury,Revive a downed ally.
+167,Shine,lostage,mars,6,Contigo,Shine can be found by using Force on a stump (requires data transfer).,mars,Dazzle foes and strike decisively.
+168,Geode,lostage,venus,6,Atteka Inlet,Geode can be found by using the Lift psynergy on a rock.,venus,Strike with a clod of earth.
+169,Coatlicue,lostage,summon,6,Atteka Cavern,Coatlicue can be found after obtaining the Wings of Anemos and flying to the southern end of Atteka.,coatlicue,A goddess bearing the water of life.
+170,Eddy,lostage,mercury,6,Shaman Village Cave,Eddy can be found by solving the Lift puzzle.,mercury,Speed up Djinn recovery time.
+171,Gasp,lostage,jupiter,6,Trial Road,Gasp can be found towards the end of Trial Toad after obtaining the Hover and Lift psynergy.,jupiter,Call the Grim Reaper on your foes.
+172,Haures,lostage,summon,6,Angara Cavern,"Haures can be found in a cavern in western Angara, north of Loho, after obtaining the Carry psynergy.",haures,A beast that sunders darkness.
+173,Fury,lostage,mars,6,Magma Rock,Fury can be found after lowering the lava level.,mars,Call forth wandering souls to attack.
+174,Lull,lostage,jupiter,6,Loho,Lull can be found after blowing up a wall using the Magma Ball from Magma Rock.,jupiter,Negotiate a temporary cease-fire.
+175,Mold,lostage,venus,6,Prox,Mold can be found by using Scoop on a pile of snow on the ice.,venus,Strike a foe.
+176,Balm,lostage,mercury,6,Mars Lighthouse,Balm can be found by solving an ice puzzle.,mercury,Revive all downed allies.
+177,Fugue,lostage,mars,6,Mars Lighthouse,Fugue can be found after heating the ice in Mars Lighthouse.,mars,Fatigue your foes to drop their PP.
+178,Gale,lostage,jupiter,6,Treasure Isle,Gale can be found by solving a Lift puzzle.,jupiter,Blast enemies with a wind strike.
+179,Azul,lostage,summon,6,Treasure Isle,Azul can be found after defeating the Star Magician.,azul,An awakened dragon from the deep.
+180,Crystal,lostage,venus,6,Yampi Desert Cave,Crystal can be found after obtaining the Teleport psynergy and solving a Pound puzzle.,venus,Restore HP to all allies.
+181,Daedalus,lostage,summon,6,Yampi Desert Cave,Daedalus can be found after defeating Valukar.,daedalus,Master craftsman of ancient times.
+182,Serac,lostage,mercury,6,Islet Cave,Serac can be found after obtaining the Teleport psynergy and interacting with a statue.,mercury,Strike a chilling finishing blow.
+183,Catastrophe,lostage,summon,6,Islet Cave,Catastrophe can be found after defeating the Sentinel.,catastrophe,The embodiment of destruction.
+184,Charon,lostage,summon,6,Anemos Inner Sanctum,Charon can be found after obtaining the Teleport psynergy and gathering all 72 djinni.,charon,The boatsman of the river Styx.
+185,Iris,lostage,summon,6,Anemos Inner Sanctum,Iris can be found after defeating Dullahan.,iris,"Goddess of rainbows, guide of souls."
+201,Flint,darkdawn,venus,1,World Map (outside Lookout Cabin),Flint will join upon embarking on your journey.,flint,Attack with a blow that can cleave stone.
+202,Forge,darkdawn,mars,1,Patcher's Place,Forge can be found by solving a Growth puzzle.,forge,Boost party Attack with flame's fury.
+203,Gust,darkdawn,jupiter,1,Goma Highlands Road,Gust can be obtained after entering the dungeon from a secret passage in Carver's Camp.,gust,Buffet foe (perhaps twice) with gale force.
+204,Chill,darkdawn,mercury,1,Carver's Camp,Chill can be found by climbing down into the canyon.,chill,Shatter a foe's defense with numbing cold.
+205,Zagan,darkdawn,summon,1,Carver's Lumberyard,Zagan can be found after solving a Whirlwind puzzle after entering from the eastern side of the dungeon.,zagan,Earth's might enflamed.
+206,Fever,darkdawn,mars,1,World Map (south of Carver's Camp),Fever can be found while traveling south from Carver's Camp to the Konpa Gate.,fever,Damage and delude a foe with a heat haze.
+207,Flower,darkdawn,venus,1,Konpa Gate,Flower can be found after using Whirlwind on a field of flowers.,flower,Refresh allies and restore HP.
+208,Jolt,darkdawn,jupiter,1,Konpa Ruins,Jolt can be found at the top of the dungeon after obtaining the Grip psynergy.,jolt,May revive a downed ally with sharp shocks.
+209,Sleet,darkdawn,mercury,2,Konpa Ruins,Sleet will join alongside Rief.,sleet,Slash a foe with ice to reduce its Attack.
+210,Megaera,darkdawn,summon,2,Konpa Shrine,Megaera can be found after solving a Douse puzzle in a cavern outside the Konpa Ruins.,megaera,The goddess of vengeance.
+211,Cinder,darkdawn,mars,2,Harapa,Cinder can be found by climbing the walls of the city through a building.,cinder,Usually revives down ally with life embers.
+212,Bark,darkdawn,venus,2,Passaj Mountain Climb,Bark can be found after traversing through most of the interior of the dungeon behind a whirlwind spout.,bark,Create a protective barrier against attacks.
+213,Ether,darkdawn,jupiter,2,World Map (west of Kaocho),Ether can be found in the forest to the west of Kaocho.,ether,Focus will to restore PP.
+214,Steel,darkdawn,venus,2,Kaocho,Steel can be found by using Grip to traverse to the western side of the town's northwestern stream and jumping over lilypads.,steel,Attack and siphon a foe's HP with a kiss.
+215,Breath,darkdawn,jupiter,2,Ayuthay,Breath can be found after obtaining the Arid Heat psynergy and using the lilypad to reach it.,breath,Restore an ally's HP before others can act.
+216,Surge,darkdawn,mercury,2,Barai Temple,Surge can be found by solving a Arid Heat puzzle.,surge,Restore party HP with a stream of life.
+217,Mist,darkdawn,mercury,2,Ayuthay,Mist will join alongside Amiti.,mist,Attack and lull a foe into deep sleep.
+218,Mellow,darkdawn,mercury,2,Ayuthay,Mellow will join alongside Amiti.,mellow,Boost party Resistance with a moist sheen.
+219,Claw,darkdawn,mercury,2,Ayuthay,Claw will join alongside Amiti.,claw,Attack to drop an enemy's Resistance.
+220,Lava,darkdawn,mars,2,Kaocho,Lava can be found after giving a man a Kaocho Dumpling.,lava,Drop enemy Defense with volcanic gases.
+221,Vortex,darkdawn,jupiter,2,Ouroboros,Vortex can be found after solving a Zol cube puzzle.,vortex,Attack and delude a foe with whirling air.
+222,Brand,darkdawn,mars,2,Passaj Mountain Climb,"Brand can be found after using the Sol Mask in the Alchemy Forge, climbing the town's new walls, and jumping down a cliff.",brand,Lock enemy Psynergy with low failure rate.
+223,Serac,darkdawn,mercury,2,Harapa Ruins,Serac can be found by solving an ice puzzle and dropping down to a lower floor.,serac,Strike a chilling finishing blow.
+224,Brick,darkdawn,venus,2,Harapa,"Brick can be found after obtaining the Cold Snap psynergy, climbing the walls of town, and entering a building from its roof.",brick,Boost party Defense with a hard covering.
+225,Flora,darkdawn,summon,2,Passaj Mountain Climb,"Flora can be found after obtaining the Cold Snap psynergy, dropping down some cliffs from the top of the dungeon, and solving a Zol cube puzzle.",flora,"The wind rider, goddess of flowers."
+226,Doldrum,darkdawn,jupiter,3,Craggy Peak Ruins,Doldrum can be found by solving a Grip and Fireball puzzle.,doldrum,Stop enemy movement with still air.
+227,Fury,darkdawn,mars,3,Te Rya Village,Fury can be found by solving a Fireball puzzle.,fury,Call haunting spirits to harm your foe.
+228,Moloch,darkdawn,summon,3,North Wall Shrine,Moloch can be found in a cavern in the mountains after solving a Fireball and Cold Snap puzzle.,moloch,The sacred ice monster.
+229,Dewdrop,darkdawn,mercury,3,Teppe Ruins,Dewdrop can be found after using Fireball and giving the fisherman the Trusty Staff.,dewdrop,Cure party status effects with fresh dew.
+230,Fleet,darkdawn,jupiter,3,Teppe Ruins,"Fleet will join alongside Sveta, and will temporarily leave until Sveta rejoins the party later on.",fleet,Boost party Agility with wind at your back.
+231,Waft,darkdawn,jupiter,3,Teppe Ruins,"Waft will join alongside Sveta, and will temporarily leave until Sveta rejoins the party later on.",waft,Smite and lull a foe to sleep with aromas.
+232,Bolt,darkdawn,jupiter,3,Teppe Ruins,"Bolt will join alongside Sveta, and will temporarily leave until Sveta rejoins the party later on.",bolt,Attack and stun a foe with electric force.
+233,Breeze,darkdawn,jupiter,3,Teppe Ruins,"Breeze will join alongside Sveta, and will temporarily leave until Sveta rejoins the party later on.",breeze,Boost party Resistance with a gentle wind.
+234,Haze,darkdawn,jupiter,3,Teppe Ruins,"Haze will join alongside Sveta, and will temporarily leave until Sveta rejoins the party later on.",haze,Hide away to avoid damage.
+235,Vine,darkdawn,venus,3,Teppe Ruins,Vine can be found hidden and running around a field of grass.,vine,Tangle multiple foes to drop Agility.
+236,Torrent,darkdawn,mercury,4,Belinsk,Torrent can be found at the docks after solving a box puzzle.,torrent,Boost party Agility with a surge of energy.
+237,Spout,darkdawn,mercury,4,Belinsk Ruins,Spout can be found behind an entrance to the ruins behind a set of bookshelves in Belinsk.,spout,"Spray foe with painful, blinding mists."
+238,Gears,darkdawn,venus,4,World Map (north of Border Town),Gears can be found to the north of Border Town.,gears,Force a foe to attack another.
+239,Ulysses,darkdawn,summon,4,Border Town Mines,"Ulysses can be found to the west of Border Town, reached by walking all the way north and around, after solving a minecart puzzle.",ulysses,A legendary wandering mage.
+240,Sirocco,darkdawn,jupiter,4,Border Town,Sirocco can be found after solving a Grip puzzle.,sirocco,Scour and delude a foe with a sandstorm.
+241,Furrow,darkdawn,venus,4,World Map (west of Port Rago),Furrow can be found on an island to the west of Port Rago.,furrow,Drain an enemy's HP.
+242,Coral,darkdawn,mercury,4,Port Rago Canal,Coral can be found after solving an Arid Heat puzzle.,coral,Restore party HP with the life-giving seas.
+243,Garland,darkdawn,venus,4,Kolima Village,Garland can be found hidden among the upper tree branches of town.,garland,Refresh an ally and restore HP.
+244,Glare,darkdawn,mars,4,Phantasmal Bog,Glare can be found after solving a log puzzle.,glare,Damage and delude a foe with heat glare.
+245,Wisp,darkdawn,jupiter,4,Saha Cistern,Wisp can be found after obtaining the Crush psynergy and solving a Move puzzle.,wisp,Restore party PP with refreshing fragrances.
+246,Pewter,darkdawn,venus,4,Kolima Forest,Pewter will join after meeting with Tret and Laurel.,pewter,Attack with molten metal through defenses.
+247,Teardrop,darkdawn,mercury,4,Kolima Forest,Teardrop can be found behind a waterfall after solving a Crush puzzle.,teardrop,Usually revive a downed ally with grieving.
+248,Puff,darkdawn,jupiter,4,Talon Peak,Puff can be found by jumping down a cliff from the summit discovered by using Crush.,puff,Inflate an enemy to bursting.
+249,Haures,darkdawn,summon,4,Border Town,Haures can be found after using a Dream Leaf at the inn and climbing over to the Bilibin side of town.,haures,A beast that sunders darkness.
+250,Chasm,darkdawn,venus,4,Belinsk Ruins,Chasm can be found after solving a Crush puzzle.,chasm,Send damage the party takes to the void.
+251,Eclipse,darkdawn,summon,4,Eclipse Tower,Eclipse can be found after interacting with the object at the top of the tower.,eclipse,A dragon whose wings span the skies.
+252,Pincer,darkdawn,mercury,4,Belinsk,Pincer can be found after solving a Cold Snap puzzle in one of the residences after Eclipse Tower.,pincer,Pinch enemy to drop its Resistance.
+253,Crystallux,darkdawn,summon,4,Belinsk,Crystallux can be found after fighting off the monsters at the opera house during the Grave Eclipse.,crystallux,A dragon with a heart of brilliant crystal.
+254,Reflux,darkdawn,mars,5,Belinsk,Reflux will join alongside Eoleo.,reflux,Boost counterattack rate.
+255,Wrath,darkdawn,mars,5,Belinsk,Wrath will join alongside Eoleo.,wrath,Attack with force that may knock foe out.
+256,Chili,darkdawn,mars,5,Belinsk,Chili will join alongside Eoleo.,chili,Stun and injure a foe with explosive force.
+257,Glow,darkdawn,mars,5,Belinsk,Glow will join alongside Eoleo.,glow,Revive a downed ally with near certainty.
+258,Stoke,darkdawn,mars,5,Belinsk,Stoke will join alongside Eoleo.,stoke,Boost party Attack with a call to victory.
+259,Spring,darkdawn,mercury,5,Harun Village,Spring can be found in a cave near the water after solving a log puzzle.,spring,Restore HP with healing springwater.
+260,Coatlicue,darkdawn,summon,5,Harun Channel,"Coatlicue can be found by filling a channel with water, entering the Harun Channel, and going south until finding a cave entrance.",coatlicue,A goddess bearing the water of life.
+261,Chain,darkdawn,venus,5,Champion's Hill,Chain can be found in a tree after raising the three watchtowers.,chain,Entangle a foe so each ally can attack.
+262,Sizzle,darkdawn,mars,5,World Map (east of Yamata),Sizzle can be found to the east of Yamata City after walking around the mountain.,sizzle,Damage and drop a foe's Defense with heat.
+263,Kite,darkdawn,jupiter,5,Yamata,Kite can be found after traversing through an underground tunnel hidden underneath a pillar.,kite,Allow an ally to take an extra action.
+264,Buckle,darkdawn,venus,5,Yamata Palace,Buckle will join alongside Himi.,buckle,Boost party Defense with a protective shell.
+265,Clover,darkdawn,venus,5,Yamata Palace,Clover will join alongside Himi.,clover,Restore allies' status to normal.
+266,Magnet,darkdawn,venus,5,Yamata Palace,Magnet will join alongside Himi.,magnet,Stun a foe with sudden force.
+267,Geode,darkdawn,venus,5,Yamata Palace,Geode will join alongside Himi.,geode,Attack with a clod of earth.
+268,Pepper,darkdawn,mars,5,Yamata Palace,Pepper will join alongside Himi.,pepper,Attack and stun a foe with unbearable heat.
+269,Swift,darkdawn,jupiter,5,Yamata Palace,Swift will join alongside Himi.,swift,Use speed of the wind to strike first.
+270,Shell,darkdawn,mercury,5,Gaia Falls Islet,Shell can be found behind a waterfall after solving a Grip puzzle.,shell,Shield allies from damage with a hard shell.
+271,Rime,darkdawn,mercury,5,Iceberg Outpost,Rime can be found after sliding off the roof of a house.,rime,Seal a foe's Psynergy.
+272,Geyser,darkdawn,mercury,5,Snowdrift Shrine,Geyser can be found after sliding down a snowy hillside.,geyser,Blast an enemy with a waterspout.
+273,Tinder,darkdawn,mars,5,Tonfon,Tinder can be found after using Slap on a sleeping man and walking on top of the boats.,tinder,Revive a downed ally without fail.
+274,Foam,darkdawn,mercury,5,World Map (southwest of Tonfon),Foam can be found in a forest shrouded by the Grave Eclipse to the southwest of Tonfon.,foam,Reduce foes' Agility with tidal disturbance.
+275,Flare,darkdawn,mars,5,Burning Island Cave,Flare can be found by solving a Thermal puzzle.,flare,Restore party PP with a psychic flare-up.
+276,Simoom,darkdawn,jupiter,5,World Map (southern islands),Simoom can be found on the largest of the several deserted islands to the south of Angara.,simoom,Scourge foe with a poisonous wind.
+277,Fugue,darkdawn,mars,5,Champa Camp,Fugue can be found hanging on a tree fruit.,fugue,Fatigue your foes to drop their PP.
+278,Lull,darkdawn,jupiter,5,Otka Island,Lull can be found after obtaining the Search psynergy and using the whirlwind on the ocean to enter Otka Island.,lull,Negotiate a temporary cease-fire for a turn.
+279,Ivy,darkdawn,venus,5,Passaj,Ivy can be found after finding the Old Rag and delivering it to the NPC in the inn.,ivy,Turn an enemy to stone.
+280,Hemlock,darkdawn,venus,5,Yamata Ruins,Hemlock can be found after solving a teleportation puzzle.,hemlock,Use ominous flora to doom all enemies.
+281,Aurora,darkdawn,mars,5,Apollo Sanctum,Aurora can be found while solving the puzzle in the Venus area.,aurora,"Speed party Djinn recovery with Sol's light,"
+282,Azul,darkdawn,summon,5,Lost Ship,Azul can be found after obtaining the Search psynergy and defeating the Star Magician.,azul,An awakened dragon from the deep.
+283,Daedalus,darkdawn,summon,5,Burning Island Cave,Daedalus can be found after obtaining the Sol Blade and defeating the Ogre Titans.,daedalus,Master craftsman of ancient times.
+284,Catastrophe,darkdawn,summon,5,Otka Island,Catastrophe can be found after obtaining the Sol Blade and defeating the Ancient Devil.,catastrophe,The embodiment of destruction.
+285,Charon,darkdawn,summon,5,Crossbone Isle,Charon can be found after finishing the game and reaching the depths of Crossbone Isle.,charon,The boatman of the river Styx.
+286,Iris,darkdawn,summon,5,Crossbone Isle,Iris can be found after finishing the game and defeating Dullahan.,iris,"Goddess of rainbows, guide of souls."

@@ -1,11 +1,12 @@
 import RenderDjinnDetail from "../components/RenderDjinnDetail";
-import { DJINN_INDEX } from "../shared/djinnindex";
+// import { DJINN_INDEX } from "../shared/djinnindex";
+import djinnindex from '../shared/djinnindex.json';
 
 const DjinnDetailsScreen = ({ route }) => {
     const { djinniName } = route.params;
 
     return (
-        <RenderDjinnDetail djinni={DJINN_INDEX[djinniName.toLowerCase()]} />
+        <RenderDjinnDetail djinni={djinnindex[djinniName.toLowerCase()]} />
     );
 }
 

@@ -6,7 +6,8 @@ import { checkedReducer } from "../features/checked/checkedSlice";
 
 const persistConfig = {
     storage: AsyncStorage,
-    key: 'root'
+    key: 'root',
+    whitelist: ['checked']
 }
 
 export const store = configureStore({

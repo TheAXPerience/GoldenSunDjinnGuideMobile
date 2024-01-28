@@ -3,8 +3,31 @@ import { Avatar, CheckBox, ListItem } from "react-native-elements";
 import { retrieveSprite } from "../shared/djinnimages";
 import { toggleChecked } from "../features/checked/checkedSlice";
 import { useSelector, useDispatch } from "react-redux";
-import { CHAPTERS_LIST } from "../shared/djinnlist";
 import { useState } from "react";
+
+const chaptersByGame = {
+    goldensun: [
+        { id: 1, name: 'Northern Angara' },
+        { id: 2, name: 'Eastern Angara' },
+        { id: 3, name: 'The Karagol Sea' },
+        { id: 4, name: 'Gondowan' }
+    ],
+    lostage: [
+        { id: 1, name: 'Indra' },
+        { id: 2, name: 'Osenia' },
+        { id: 3, name: 'Gondowan' },
+        { id: 4, name: 'Great Eastern Sea' },
+        { id: 5, name: 'Great Western Sea' },
+        { id: 6, name: 'Northern Reaches' },
+    ],
+    darkdawn: [
+        { id: 1, name: 'Goma Plateau' },
+        { id: 2, name: 'Ei-Jei' },
+        { id: 3, name: 'Khiren Mountains' },
+        { id: 4, name: 'Morgal' },
+        { id: 5, name: 'Grave Eclipse' },
+    ]
+}
 
 const chapterNumberIcons = [
     require('../assets/images/icons/one.png'),
@@ -54,14 +77,14 @@ const ChapterListScreen = ({ route, navigation }) => {
                 }}
             >
                 {
-                    CHAPTERS_LIST[name].map((chapter) => {
+                    chaptersByGame[name].map(({id, name}) => {
                         return (
                             <Avatar
-                                source={chapterNumberIcons[chapter-1]}
+                                source={chapterNumberIcons[id-1]}
                                 size={48}
-                                onPress={() => setChapter(chapter)}
+                                onPress={() => setChapter(id)}
                                 rounded
-                                key={chapter}
+                                key={id}
                             />
                         );
                     })

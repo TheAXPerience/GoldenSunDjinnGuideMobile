@@ -7,7 +7,8 @@ import ChecklistScreen from './ChecklistScreen';
 import DjinnListScreen from './DjinnlistScreen';
 import ChapterListScreen from './ChapterListScreen';
 import DjinnDetailsScreen from './DjinnDetailsScreen';
-import { DJINN_LIST } from "../shared/djinnlist";
+// import { DJINN_LIST } from "../shared/djinnlist";
+import djinnlist from '../shared/djinnlist.json';
 import { Image } from "react-native-elements";
 
 const GoldenSunNavigator = () => {
@@ -15,7 +16,7 @@ const GoldenSunNavigator = () => {
 
     const initialParams = {
         name: 'goldensun',
-        djinn: DJINN_LIST.goldensun,
+        djinn: djinnlist.goldensun,
     }
 
     return (
@@ -71,7 +72,7 @@ const LostAgeNavigator = () => {
 
     const initialParams = {
         name: 'lostage',
-        djinn: DJINN_LIST.lostage,
+        djinn: djinnlist.lostage,
     }
 
     return (
@@ -127,7 +128,7 @@ const DarkDawnNavigator = () => {
 
     const initialParams = {
         name: 'darkdawn',
-        djinn: DJINN_LIST.darkdawn,
+        djinn: djinnlist.darkdawn,
     }
 
     return (
@@ -182,9 +183,9 @@ const Main = () => {
     const Stack = createStackNavigator();
 
     const screenOptions = {
-        headerTintColor: '#FFFFFF', // text color
+        headerTintColor: '#f4d41d', // text color
         headerStyle: {
-            backgroundColor: '#DDCD48' // background color
+            backgroundColor: '#6C4023', // background color
         }
     };
 
@@ -207,7 +208,7 @@ const Main = () => {
                 <Stack.Screen
                     name='djinndetails'
                     component={DjinnDetailsScreen}
-                    options={({ route} ) => ({
+                    options={({ route }) => ({
                         title: route.params.djinniName
                     })}
                 />
