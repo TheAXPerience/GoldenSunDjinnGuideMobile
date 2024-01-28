@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FlatList, View, Text } from "react-native";
+import { FlatList, View } from "react-native";
 import { Avatar, CheckBox, ListItem, Icon } from "react-native-elements";
 import { retrieveSprite } from "../shared/djinnimages";
 import { toggleChecked } from "../features/checked/checkedSlice";

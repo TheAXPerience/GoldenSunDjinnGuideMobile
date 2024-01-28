@@ -13,9 +13,23 @@ const checkedSlice = createSlice({
                 // in state -> remove
                 state.splice(idx, 1);
             }
+        },
+        resetGame: (state, action) => {
+            // save anything below this
+            const lowerRange = (action.payload === 'goldensun') ? 0 :
+                (action.payload === 'lostage') ? 100 :
+                (action.payload === 'darkdawn') ? 200 :
+                0;
+            // save everything above this
+            const upperRange = (action.payload === 'goldensun') ? 100 :
+                (action.payload === 'lostage') ? 200 :
+                (action.payload === 'darkdawn') ? 300 :
+                300;
+            
+            return state.filter((id) => id < lowerRange || id > upperRange);
         }
     }
 });
 
 export const checkedReducer = checkedSlice.reducer;
-export const { toggleChecked } = checkedSlice.actions;
+export const { toggleChecked, resetGame } = checkedSlice.actions;

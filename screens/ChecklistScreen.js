@@ -1,7 +1,7 @@
 import { FlatList, View } from "react-native";
-import { Avatar, Button, CheckBox, Icon, ListItem } from "react-native-elements";
+import { Avatar, CheckBox, Icon, ListItem } from "react-native-elements";
 import { retrieveSprite } from "../shared/djinnimages";
-import { toggleChecked } from "../features/checked/checkedSlice";
+import { toggleChecked, resetGame } from "../features/checked/checkedSlice";
 import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
 
@@ -32,7 +32,7 @@ const ChecklistScreen = ({ route, navigation }) => {
     }
 
     const resetForGame = () => {
-
+        dispatch(resetGame(name))
     }
 
     const DjinnListItem = ({ item: djinni }) => (
@@ -92,7 +92,7 @@ const ChecklistScreen = ({ route, navigation }) => {
                     type='font-awesome'
                     name='check-square-o'
                     size={48}
-                    onPress={() => setShowChecked(false)}
+                    onPress={() => setShowChecked(true)}
                 />
                 <Icon
                     type='font-awesome'
