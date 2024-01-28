@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FlatList, View, Text } from "react-native";
-import { Avatar, CheckBox, ListItem } from "react-native-elements";
+import { Avatar, CheckBox, ListItem, Icon } from "react-native-elements";
 import { retrieveSprite } from "../shared/djinnimages";
 import { toggleChecked } from "../features/checked/checkedSlice";
 import { useSelector, useDispatch } from "react-redux";
@@ -58,7 +58,15 @@ const DjinnListScreen = ({ route, navigation }) => {
                 source={retrieveSprite(name, djinni.image)}
             />
             <ListItem.Content>
-                <ListItem.Title>{djinni.name}</ListItem.Title>
+                <ListItem.Title>
+                    {djinni.name + ' '}
+                    <Icon
+                        type='feather'
+                        name='arrow-up-right'
+                        size={8}
+                        color='#000088'
+                    />
+                </ListItem.Title>
             </ListItem.Content>
             <CheckBox
                 checked={checkedDjinn.includes(djinni.id)}

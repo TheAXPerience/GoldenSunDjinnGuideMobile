@@ -29,15 +29,6 @@ const chaptersByGame = {
     ]
 }
 
-const chapterNumberIcons = [
-    require('../assets/images/icons/one.png'),
-    require('../assets/images/icons/two.png'),
-    require('../assets/images/icons/three.png'),
-    require('../assets/images/icons/four.png'),
-    require('../assets/images/icons/five.png'),
-    require('../assets/images/icons/six.png'),
-]
-
 const ChapterListScreen = ({ route, navigation }) => {
     const { name, djinn } = route.params;
     const [chapter, setChapter] = useState(1);
@@ -81,7 +72,15 @@ const ChapterListScreen = ({ route, navigation }) => {
                 source={retrieveSprite(name, djinni.image)}
             />
             <ListItem.Content>
-                <ListItem.Title>{djinni.name}</ListItem.Title>
+                <ListItem.Title>
+                    {djinni.name + ' '}
+                    <Icon
+                        type='feather'
+                        name='arrow-up-right'
+                        size={8}
+                        color='#000088'
+                    />
+                </ListItem.Title>
             </ListItem.Content>
             <CheckBox
                 checked={checkedDjinn.includes(djinni.id)}

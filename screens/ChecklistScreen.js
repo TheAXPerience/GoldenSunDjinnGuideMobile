@@ -53,7 +53,15 @@ const ChecklistScreen = ({ route, navigation }) => {
                 source={retrieveSprite(name, djinni.image)}
             />
             <ListItem.Content>
-                <ListItem.Title>{djinni.name}</ListItem.Title>
+                <ListItem.Title>
+                    {djinni.name + ' '}
+                    <Icon
+                        type='feather'
+                        name='arrow-up-right'
+                        size={8}
+                        color='#000088'
+                    />
+                </ListItem.Title>
             </ListItem.Content>
             <CheckBox
                 checked={checkedDjinn.includes(djinni.id)}
