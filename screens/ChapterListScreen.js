@@ -1,5 +1,5 @@
 import { FlatList, View } from "react-native";
-import { Avatar, CheckBox, ListItem } from "react-native-elements";
+import { Avatar, CheckBox, Icon, ListItem } from "react-native-elements";
 import { retrieveSprite } from "../shared/djinnimages";
 import { toggleChecked } from "../features/checked/checkedSlice";
 import { useSelector, useDispatch } from "react-redux";
@@ -7,25 +7,25 @@ import { useState } from "react";
 
 const chaptersByGame = {
     goldensun: [
-        { id: 1, name: 'Northern Angara' },
-        { id: 2, name: 'Eastern Angara' },
-        { id: 3, name: 'The Karagol Sea' },
-        { id: 4, name: 'Gondowan' }
+        { id: 1, name: 'Northern Angara', iconType: 'material', iconName: 'looks-one' },
+        { id: 2, name: 'Eastern Angara', iconType: 'material', iconName: 'looks-two' },
+        { id: 3, name: 'The Karagol Sea', iconType: 'material', iconName: 'looks-3' },
+        { id: 4, name: 'Gondowan', iconType: 'material', iconName: 'looks-4' }
     ],
     lostage: [
-        { id: 1, name: 'Indra' },
-        { id: 2, name: 'Osenia' },
-        { id: 3, name: 'Gondowan' },
-        { id: 4, name: 'Great Eastern Sea' },
-        { id: 5, name: 'Great Western Sea' },
-        { id: 6, name: 'Northern Reaches' },
+        { id: 1, name: 'Indra', iconType: 'material', iconName: 'looks-one' },
+        { id: 2, name: 'Osenia', iconType: 'material', iconName: 'looks-two' },
+        { id: 3, name: 'Gondowan', iconType: 'material', iconName: 'looks-3' },
+        { id: 4, name: 'Great Eastern Sea', iconType: 'material', iconName: 'looks-4' },
+        { id: 5, name: 'Great Western Sea', iconType: 'material', iconName: 'looks-5' },
+        { id: 6, name: 'Northern Reaches', iconType: 'material', iconName: 'looks-6' },
     ],
     darkdawn: [
-        { id: 1, name: 'Goma Plateau' },
-        { id: 2, name: 'Ei-Jei' },
-        { id: 3, name: 'Khiren Mountains' },
-        { id: 4, name: 'Morgal' },
-        { id: 5, name: 'Grave Eclipse' },
+        { id: 1, name: 'Goma Plateau', iconType: 'material', iconName: 'looks-one' },
+        { id: 2, name: 'Ei-Jei', iconType: 'material', iconName: 'looks-two' },
+        { id: 3, name: 'Khiren Mountains', iconType: 'material', iconName: 'looks-3' },
+        { id: 4, name: 'Morgal', iconType: 'material', iconName: 'looks-4' },
+        { id: 5, name: 'Grave Eclipse', iconType: 'material', iconName: 'looks-5' },
     ]
 }
 
@@ -104,10 +104,11 @@ const ChapterListScreen = ({ route, navigation }) => {
                 }}
             >
                 {
-                    chaptersByGame[name].map(({id, name}) => {
+                    chaptersByGame[name].map(({id, name, iconType, iconName}) => {
                         return (
-                            <Avatar
-                                source={chapterNumberIcons[id-1]}
+                            <Icon
+                                type={iconType}
+                                name={iconName}
                                 size={48}
                                 onPress={() => setChapter(id)}
                                 rounded

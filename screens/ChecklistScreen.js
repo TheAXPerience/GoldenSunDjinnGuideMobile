@@ -1,5 +1,5 @@
 import { FlatList, View } from "react-native";
-import { Avatar, Button, CheckBox, ListItem } from "react-native-elements";
+import { Avatar, Button, CheckBox, Icon, ListItem } from "react-native-elements";
 import { retrieveSprite } from "../shared/djinnimages";
 import { toggleChecked } from "../features/checked/checkedSlice";
 import { useSelector, useDispatch } from "react-redux";
@@ -29,6 +29,10 @@ const ChecklistScreen = ({ route, navigation }) => {
                 break;
         }
         return color;
+    }
+
+    const resetForGame = () => {
+
     }
 
     const DjinnListItem = ({ item: djinni }) => (
@@ -64,26 +68,29 @@ const ChecklistScreen = ({ route, navigation }) => {
         <>
             <View
                 style={{
-                    justifyContent: 'center',
                     flexDirection: 'row',
                     justifyContent: 'space-between',
                     padding: 10,
                     columnGap: 5
                 }}
             >
-                <Button
-                    title='Unchecked'
-                    containerStyle={{ height: 48 }}
+                <Icon
+                    type='font-awesome'
+                    name='square-o'
+                    size={48}
                     onPress={() => setShowChecked(false)}
                 />
-                <Button
-                    title='Checked'
-                    containerStyle={{ height: 48 }}
-                    onPress={() => setShowChecked(true)}
+                <Icon
+                    type='font-awesome'
+                    name='check-square-o'
+                    size={48}
+                    onPress={() => setShowChecked(false)}
                 />
-                <Button
-                    title='Reset'
-                    containerStyle={{ height: 48 }}
+                <Icon
+                    type='font-awesome'
+                    name='refresh'
+                    size={48}
+                    onPress={() => resetForGame()}
                 />
             </View>
 

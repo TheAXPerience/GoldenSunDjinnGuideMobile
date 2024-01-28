@@ -9,7 +9,7 @@ import ChapterListScreen from './ChapterListScreen';
 import DjinnDetailsScreen from './DjinnDetailsScreen';
 // import { DJINN_LIST } from "../shared/djinnlist";
 import djinnlist from '../shared/djinnlist.json';
-import { Image } from "react-native-elements";
+import { Image, Icon } from "react-native-elements";
 
 const GoldenSunNavigator = () => {
     const Tabs = createBottomTabNavigator();
@@ -30,9 +30,10 @@ const GoldenSunNavigator = () => {
                 initialParams={initialParams}
                 options={{
                     tabBarIcon: ({color, size}) => (
-                        <Image
-                            source={require('../assets/images/icons/checkmark.png')}
-                            style={{height: size, width: size, tintColor: color}}
+                        <Icon
+                            type='font-awesome'
+                            name='check-square-o'
+                            iconStyle={{height: size, width: size, color: color}}
                         />
                     )
                 }}
@@ -56,9 +57,10 @@ const GoldenSunNavigator = () => {
                 initialParams={initialParams}
                 options={{
                     tabBarIcon: ({color, size}) => (
-                        <Image
-                            source={require('../assets/images/icons/chapterbook.png')}
-                            style={{height: size, width: size, tintColor: color}}
+                        <Icon
+                            type='entypo'
+                            name='book'
+                            iconStyle={{height: size, width: size, color: color}}
                         />
                     )
                 }}
@@ -86,9 +88,10 @@ const LostAgeNavigator = () => {
                 initialParams={initialParams}
                 options={{
                     tabBarIcon: ({color, size}) => (
-                        <Image
-                            source={require('../assets/images/icons/checkmark.png')}
-                            style={{height: size, width: size, tintColor: color}}
+                        <Icon
+                            type='font-awesome'
+                            name='check-square-o'
+                            iconStyle={{height: size, width: size, color: color}}
                         />
                     )
                 }}
@@ -112,9 +115,10 @@ const LostAgeNavigator = () => {
                 initialParams={initialParams}
                 options={{
                     tabBarIcon: ({color, size}) => (
-                        <Image
-                            source={require('../assets/images/icons/chapterbook.png')}
-                            style={{height: size, width: size, tintColor: color}}
+                        <Icon
+                            type='entypo'
+                            name='book'
+                            iconStyle={{height: size, width: size, color: color}}
                         />
                     )
                 }}
@@ -142,9 +146,10 @@ const DarkDawnNavigator = () => {
                 initialParams={initialParams}
                 options={{
                     tabBarIcon: ({color, size}) => (
-                        <Image
-                            source={require('../assets/images/icons/checkmark.png')}
-                            style={{height: size, width: size, tintColor: color}}
+                        <Icon
+                            type='font-awesome'
+                            name='check-square-o'
+                            iconStyle={{height: size, width: size, color: color}}
                         />
                     )
                 }}
@@ -168,9 +173,10 @@ const DarkDawnNavigator = () => {
                 initialParams={initialParams}
                 options={{
                     tabBarIcon: ({color, size}) => (
-                        <Image
-                            source={require('../assets/images/icons/chapterbook.png')}
-                            style={{height: size, width: size, tintColor: color}}
+                        <Icon
+                            type='entypo'
+                            name='book'
+                            iconStyle={{height: size, width: size, color: color}}
                         />
                     )
                 }}
