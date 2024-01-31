@@ -1,4 +1,4 @@
-import { FlatList, View } from "react-native";
+import { Alert, FlatList, View } from "react-native";
 import { Avatar, CheckBox, Icon, ListItem } from "react-native-elements";
 import { retrieveSprite } from "../shared/djinnimages";
 import { toggleChecked, resetGame } from "../features/checked/checkedSlice";
@@ -32,7 +32,21 @@ const ChecklistScreen = ({ route, navigation }) => {
     }
 
     const resetForGame = () => {
-        dispatch(resetGame(name))
+        Alert.alert(
+            'Are you sure you want to reset the checklist?',
+            'Every item for this game will become unmarked. Are you okay with this?',
+            [
+                {
+                    text: 'Yes',
+                    onPress: () => {
+                        dispatch(resetGame(name));
+                    }
+                },
+                {
+                    text: 'No'
+                }
+            ]
+        );
     }
 
     const DjinnListItem = ({ item: djinni }) => (
